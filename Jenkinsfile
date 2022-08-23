@@ -9,7 +9,7 @@ pipeline{
     stages{
         stage('checkout'){
             steps{
-                checkout([$class: 'GitSCM', branches: [[name: '*/master']], extensions: [], userRemoteConfigs: [[credentialsId: 'git-cre', url: 'https://github.com/Santhosh-Nagarajan/maven-demo.git']]])
+                checkout([$class: 'GitSCM', branches: [[name: '*/master']], extensions: [], userRemoteConfigs: [[credentialsId: 'git-cre', url: 'https://github.com/Santhosh-Nagarajan/mave-demo.git']]])
 		}
         }
         stage('build'){
